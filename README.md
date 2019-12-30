@@ -1,5 +1,10 @@
 LINK: https://github.com/veliValentine/CyberSecurityProject
 
+Faults are based on:
+<a href="https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf">
+OWASP Top 10 - 2017
+The Ten Most Critical Web Application Security Risks</a>
+
 From frontpage you may access each fault. 
 Faults are:
 1. Injection flaw
