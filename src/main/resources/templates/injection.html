@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>Injection</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"/>
+    </head>
+    <body>
+        <a href="/" >Home</a>
+        <h1>Injection flaw</h1>
+
+        <p>Insert name for information</p>
+        <form th:action="@{/injection}" method="POST">
+            <input type="text" name="n"/>
+            <input type="submit"/>
+        </form>
+
+        <ul>
+            <li th:each="item: ${list}" th:text="${item}">Text here</li>
+        </ul>
+
+    </body>
+</html>
